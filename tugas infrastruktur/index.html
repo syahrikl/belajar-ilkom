@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pendidikan Ilmu Komputer</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    
+    <!-- === TAMBAHAN BARU: LOGIN GATE MODAL === -->
+    <div id="login-gate">
+        <div class="login-box">
+            <h2>Silakan Login</h2>
+            <form id="login-form">
+                <div class="form-group">
+                    <label for="username">Username</label>
+                    <input type="text" id="username" required>
+                </div>
+                <div class="form-group">
+                    <label for="password">Password</label>
+                    <input type="password" id="password" required>
+                </div>
+                <p id="login-error">Username atau password salah!</p>
+                <button type="submit">Login</button>
+            </form>
+        </div>
+    </div>
+    <!-- === AKHIR DARI TAMBAHAN BARU === -->
+
+    <!-- HEADER -->
+    <header class="main-header">
+        <div class="container">
+            <a href="#beranda" class="site-title">Pendidikan Ilkom</a>
+            <div class="menu-toggle">☰</div>
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="#beranda" class="active">Beranda</a></li>
+                    <li><a href="#tentang">Tentang Kami</a></li>
+                    <li><a href="#materi">Materi</a></li>
+                    <li><a href="#kursus">Kursus</a></li>
+                    <li><a href="#blog">Blog</a></li>
+                    <li><a href="#kontak">Kontak</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- MAIN CONTENT -->
+    <main>
+        <!-- (Konten main Anda tetap di sini) -->
+        <section id="beranda" class="section">
+            <div class="hero-content"><h1>Pendidikan Ilmu Komputer</h1><p>Platform online gratis untuk mempelajari dasar-dasar ilmu komputer, dari pemrograman hingga keamanan siber.</p><a href="#materi" class="btn">Mulai Belajar Sekarang</a></div>
+        </section>
+        <section id="tentang" class="section section-dark">
+            <div class="container"><h2>Tentang Kami</h2><div class="card-grid"><div class="card"><h3>Visi & Misi</h3><p><strong>Visi:</strong>
+                 Menjadi sumber belajar ilmu komputer terdepan.<br><strong>Misi:</strong> Menyediakan materi berkualitas tinggi secara gratis dan membangun komunitas belajar yang suportif.
+                </p></div><div class="card"><h3>Pengembang</h3><p>Website ini dikembangkan oleh <strong>[SYAHRI RAMADHAN]</strong>, mahasiswa [TEKNOLOGI INFORMASI] sebagai Tugas Infrastruktur Teknologi Informasi.
+                </p></div><div class="card"><h3>Tujuan Platform</h3><p>Memberikan kesempatan bagi siapa saja yang tertarik untuk belajar ilmu komputer tanpa hambatan biaya dan dengan materi yang mudah dipahami.</p></div></div></div>
+        </section>
+        <section id="materi" class="section section-light">
+            <div class="container"><h2>Materi Pembelajaran</h2><div class="card-grid"><div class="card"><h3>Pemrograman Dasar</h3>
+                <p>Python & C++. Pelajari logika, sintaks, dan struktur data.</p></div><div class="card"><h3>Struktur Data & Algoritma</h3><p>Pahami cara kerja struktur data untuk pemecahan masalah.
+                </p></div><div class="card"><h3>Jaringan Komputer</h3><p>Kenali konsep dasar jaringan, model OSI/TCP-IP.</p></div><div class="card"><h3>Sistem Operasi</h3><p>Pelajari fungsi OS dalam mengelola sumber daya komputer.</p></div><div class="card"><h3>Keamanan Siber</h3><p>Pengenalan tentang ancaman dan teknik pertahanan siber.</p></div><div class="card"><h3>Kecerdasan Buatan (AI)</h3><p>Jelajahi dunia AI, Machine Learning, dan aplikasinya.</p></div></div></div>
+        </section>
+        <section id="kursus" class="section section-dark">
+            <div class="container"><h2>Kursus Online / Tutorial</h2><div class="card-grid"><div class="card"><h3>Kursus Python untuk Pemula</h3><p>Mencakup variabel, loop, dan fungsi dasar.</p><a href="https://www.youtube.com/watch?v=kqtD5dpn9C8" target="_blank">Lihat Materi →</a></div><div class="card"><h3>Dasar-Dasar Jaringan Komputer</h3><p>Mempelajari IP Address, DNS, dan cara kerja router.</p><a href="https://youtu.be/2tBYH2yX9tI?si=LxNcXqbQS2VYMGtg" target="_blank">Lihat Materi →</a></div><div class="card"><h3>Progres Pengguna (Opsional)</h3><p><em>Fitur untuk melacak kemajuan belajar Anda sedang dalam pengembangan!</em></p></div></div></div>
+        </section>
+        <section id="blog" class="section section-light">
+            <div class="container"><h2>Blog / Artikel</h2><div class="card-grid"><article class="card"><h3>5 Tips Belajar Pemrograman</h3><p>Konsistensi, praktik, dan jangan takut error adalah kuncinya. Mulailah dari hal kecil!</p><a href="https://primakara.ac.id/blog/info-teknologi/belajar-coding-pemula" target="_blank">Baca Selengkapnya →</a></article><article class="card"><h3>Tren Teknologi 2025</h3><p>Dari Generative AI hingga komputasi kuantum, inilah yang perlu Anda ketahui.</p><a href="https://www.cloudcomputing.id/tren/tren-teknologi-2025" target="_blank">Baca Selengkapnya →</a></article></div></div>
+        </section>
+        <section id="kontak" class="section section-dark">
+            <div class="container"><h2>Hubungi Kami</h2><form id="contactForm" class="contact-form"><div class="form-group"><label for="name">Nama</label><input type="text" id="name" required></div><div class="form-group"><label for="email">Email</label><input type="email" id="email" required></div><div class="form-group"><label for="message">Pesan</label><textarea id="message" rows="5" required></textarea></div><button type="submit" class="btn">Kirim Pesan</button></form></div>
+        </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="main-footer">
+        <div class="container">
+            <div class="social-links">
+                <a href="https://www.instagram.com/syhrikl?igsh=Mnc5cDNuaDVseWU5" target="_blank" title="Instagram"><i class="fab fa-instagram"></i></a>
+                <a href="https://www.facebook.com/share/1Eidd6uv5w/" target="_blank" title="Facebook"><i class="fab fa-facebook"></i></a>
+                <a href="https://wa.me/6281265167105" target="_blank" title="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+            </div>
+            <p>© 2024 Pendidikan Ilmu Komputer. Dibuat oleh <a href="#tentang">[Nama Anda]</a>.</p>
+            <p>Email: <a href="mailto:pendidikan.ilkomputer@example.com">pendidikan.ilkomputer@example.com</a></p>
+        </div>
+    </footer>
+    
+    <script src="script.js"></script>
+</body>
+</html>
